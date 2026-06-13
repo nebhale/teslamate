@@ -1,0 +1,25 @@
+lib/teslamate/vehicles/vehicle/summary.ex
+  s_86bf2e80d51623::t_e46bb170598539 13,134-137,189-211
+test/teslamate/mqtt/pubsub/vehicle_subscriber_test.exs
+  s_86bf2e80d51623::t_e46bb170598539 37-40
+website/docs/integrations/mqtt.md
+  s_86bf2e80d51623::t_e46bb170598539 42-45
+lib/teslamate/mqtt/pubsub/vehicle_subscriber.ex
+  s_86bf2e80d51623::t_e46bb170598539 109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "5a661cc47f628e148318900170bf1d5c7b3d00a6",
+  "prompts": {},
+  "sessions": {
+    "s_86bf2e80d51623": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ec0f2-87de-7360-913c-454307a576ba",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
