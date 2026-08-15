@@ -443,18 +443,17 @@ defmodule TeslaMate.Mqtt.PubSub.VehicleSubscriberTest do
     summary = %Summary{healthy: true, display_name: "Foo", model: "3", state: :online}
     send(pid, summary)
 
-    # The discovery config messages are emitted synchronously on the first
-    # summary. Wait for and drain them all so they don't carry over to the
-    # refute on the next summary.
+    # The discovery config message is emitted synchronously on the first
+    # summary.
     assert_receive {MqttPublisherMock,
-                    {:publish, "homeassistant/" <> _ = _topic, payload, [retain: true, qos: 1]}},
+                    {:publish, "homeassistant/device/teslamate_0/config", payload,
+                     [retain: true, qos: 1]}},
                    500
 
     decoded = Jason.decode!(payload)
-    assert Map.has_key?(decoded, "unique_id")
     assert Map.has_key?(decoded, "device")
-
-    drain_discovery_configs()
+    assert Map.has_key?(decoded, "components")
+    assert Map.has_key?(decoded, "origin")
 
     send(pid, %Summary{summary | version: "1"})
 
@@ -471,10 +470,8 @@ defmodule TeslaMate.Mqtt.PubSub.VehicleSubscriberTest do
     # Retained discovery configs are cleared on init so entities are removed
     # from Home Assistant when discovery is disabled.
     assert_receive {MqttPublisherMock,
-                    {:publish, "homeassistant/sensor/teslamate_0/display_name/config", "",
+                    {:publish, "homeassistant/device/teslamate_0/config", "",
                      [retain: true, qos: 1]}}
-
-    drain_discovery_configs()
 
     send(pid, %Summary{healthy: true, display_name: "Foo", state: :online})
 
