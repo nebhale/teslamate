@@ -455,11 +455,42 @@ defmodule TeslaMate.Mqtt.PubSub.VehicleSubscriberTest do
     assert Map.has_key?(decoded, "components")
     assert Map.has_key?(decoded, "origin")
 
+    drain_discovery_configs()
+
     send(pid, %Summary{summary | version: "1"})
 
     # No new discovery config should be published on subsequent summaries
     refute_receive {MqttPublisherMock,
                     {:publish, "homeassistant/" <> _, _, [retain: true, qos: 1]}}
+  end
+
+  test "retries Home Assistant discovery after a publishing failure", %{test: name} do
+    legacy_topic = "homeassistant/sensor/teslamate_0/display_name/config"
+
+    {:ok, pid} =
+      start_subscriber(name, 0, nil, %{legacy_topic => [{:error, :disconnected}]},
+        discovery: true
+      )
+
+    assert_receive {VehiclesMock, {:subscribe_to_summary, 0}}
+
+    summary = %Summary{healthy: true, display_name: "Foo", model: "3", state: :online}
+    send(pid, summary)
+
+    assert_receive {MqttPublisherMock,
+                    {:publish, ^legacy_topic, _migration_payload, [retain: true, qos: 1]}}
+
+    refute_receive {MqttPublisherMock,
+                    {:publish, "homeassistant/device/teslamate_0/config", _, _}}
+
+    send(pid, summary)
+
+    assert_receive {MqttPublisherMock,
+                    {:publish, "homeassistant/device/teslamate_0/config", _payload,
+                     [retain: true, qos: 1]}},
+                   500
+
+    drain_discovery_configs()
   end
 
   test "clears discovery configs when discovery is disabled", %{test: name} do
@@ -472,6 +503,8 @@ defmodule TeslaMate.Mqtt.PubSub.VehicleSubscriberTest do
     assert_receive {MqttPublisherMock,
                     {:publish, "homeassistant/device/teslamate_0/config", "",
                      [retain: true, qos: 1]}}
+
+    drain_discovery_configs()
 
     send(pid, %Summary{healthy: true, display_name: "Foo", state: :online})
 

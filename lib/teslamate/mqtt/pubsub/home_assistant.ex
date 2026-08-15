@@ -13,6 +13,7 @@ defmodule TeslaMate.Mqtt.PubSub.HomeAssistant do
   alias TeslaMate.Log.Car
 
   @discovery_prefix "homeassistant"
+  @migration_payload Jason.encode!(%{migrate_discovery: true})
   @node "teslamate"
   @version Mix.Project.config()[:version]
 
@@ -24,8 +25,9 @@ defmodule TeslaMate.Mqtt.PubSub.HomeAssistant do
         ]
 
   @doc """
-  Publishes a device discovery configuration payload containing every entity
-  derived from the given vehicle summary.
+  Migrates any existing single-component discovery configs, publishes a device
+  discovery configuration payload containing every entity derived from the
+  given vehicle summary, and then clears the old retained configs.
 
   The payload is published retained (QoS 1) to
   `<discovery_prefix>/device/<node>/config` where `node` is
@@ -50,7 +52,7 @@ defmodule TeslaMate.Mqtt.PubSub.HomeAssistant do
         |> then(&{object_id, &1})
       end)
 
-    payload =
+    device_payload =
       %{
         components: components,
         device: device(summary, car_id, base_url, namespace),
@@ -58,13 +60,21 @@ defmodule TeslaMate.Mqtt.PubSub.HomeAssistant do
       }
       |> Jason.encode!()
 
-    call(publisher, :publish, [discovery_topic(prefix, node), payload, [retain: true, qos: 1]])
+    with :ok <- publish_legacy_configs(prefix, node, @migration_payload, publisher),
+         :ok <-
+           call(publisher, :publish, [
+             device_discovery_topic(prefix, node),
+             device_payload,
+             [retain: true, qos: 1]
+           ]) do
+      publish_legacy_configs(prefix, node, "", publisher)
+    end
   end
 
   @doc """
-  Publishes an empty retained payload to clear a vehicle's device discovery
-  topic, so its entities are removed from Home Assistant when discovery is
-  disabled or the vehicle is removed.
+  Publishes empty retained payloads to clear a vehicle's device discovery topic
+  and any legacy single-component topics, so its entities are removed from Home
+  Assistant when discovery is disabled or the vehicle is removed.
   """
   @spec clear(pos_integer(), publish_opts(), term()) :: :ok | {:error, term()}
   def clear(car_id, opts, publisher) do
@@ -72,11 +82,33 @@ defmodule TeslaMate.Mqtt.PubSub.HomeAssistant do
     prefix = Keyword.get(opts, :discovery_prefix, @discovery_prefix)
     node = node(car_id, namespace)
 
-    call(publisher, :publish, [discovery_topic(prefix, node), "", [retain: true, qos: 1]])
+    with :ok <-
+           call(publisher, :publish, [
+             device_discovery_topic(prefix, node),
+             "",
+             [retain: true, qos: 1]
+           ]) do
+      publish_legacy_configs(prefix, node, "", publisher)
+    end
   end
 
-  defp discovery_topic(prefix, node) do
+  defp publish_legacy_configs(prefix, node, payload, publisher) do
+    Enum.reduce_while(entities(), :ok, fn {component, object_id, _config}, _acc ->
+      topic = component_discovery_topic(prefix, component, node, object_id)
+
+      case call(publisher, :publish, [topic, payload, [retain: true, qos: 1]]) do
+        :ok -> {:cont, :ok}
+        {:error, _} = error -> {:halt, error}
+      end
+    end)
+  end
+
+  defp device_discovery_topic(prefix, node) do
     Enum.join([prefix, "device", node, "config"], "/")
+  end
+
+  defp component_discovery_topic(prefix, component, node, object_id) do
+    Enum.join([prefix, component, node, object_id, "config"], "/")
   end
 
   defp origin do

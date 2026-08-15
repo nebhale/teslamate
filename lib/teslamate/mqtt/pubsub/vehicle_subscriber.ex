@@ -123,8 +123,10 @@ defmodule TeslaMate.Mqtt.PubSub.VehicleSubscriber do
 
     state =
       if state.discovery and not state.discovery_published do
-        publish_discovery(summary, state)
-        %{state | discovery_published: true}
+        case publish_discovery(summary, state) do
+          :ok -> %{state | discovery_published: true}
+          {:error, _reason} -> state
+        end
       else
         state
       end
@@ -141,6 +143,7 @@ defmodule TeslaMate.Mqtt.PubSub.VehicleSubscriber do
 
       {:error, reason} ->
         Logger.warning("MQTT HA discovery publishing failed: #{inspect(reason)}")
+        {:error, reason}
     end
   end
 
