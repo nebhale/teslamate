@@ -2,6 +2,7 @@ test/teslamate/mqtt/pubsub/vehicle_subscriber_test.exs
   s_44bab730a4fd26::t_3c35d3ae6a3fc0 605-623,626-634
   s_44bab730a4fd26::t_4789bd76cbc687 490-491,646
   s_44bab730a4fd26::t_f2ae5dd04a1be8 647
+  s_44bab730a4fd26::t_a76743ba48ec2a 494,509-510,521-522,533-534,624-625
 lib/teslamate/mqtt/pubsub/home_assistant.ex
   s_44bab730a4fd26::t_a8000358fc69d3 16,29-31,55,63-71,97-99,107-114,117-128,132-134
   s_44bab730a4fd26::t_fa04630849c5f6 135
