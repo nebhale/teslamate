@@ -1,0 +1,23 @@
+lib/teslamate/mqtt/pubsub/home_assistant.ex
+  s_61473c49205c1a::t_df2e7ff5fb1532 71-72,74,79,305-330
+  s_61473c49205c1a::t_6ddd469b672454 757
+test/teslamate/mqtt/pubsub/home_assistant_test.exs
+  s_61473c49205c1a::t_6ddd469b672454 466-467
+  s_61473c49205c1a::t_df2e7ff5fb1532 430-465,468-472
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9efd51c418fdd06376ab35d6a5246f133e07b7a2",
+  "prompts": {},
+  "sessions": {
+    "s_61473c49205c1a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a011ac-0cf0-7f92-86e6-0ffc6cd42b4c",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    }
+  }
+}
