@@ -4,13 +4,16 @@ test/teslamate/mqtt/pubsub/vehicle_subscriber_test.exs
   s_81615de9bf95d3::t_89ab3c53a9ee19 218,266
   s_81615de9bf95d3::t_16106b8317b975 539-540
   s_81615de9bf95d3::t_45abf6ee5c5814 217,219-224
+  s_81615de9bf95d3::t_b8024f6bf61905 534
 lib/teslamate/mqtt/pubsub/home_assistant.ex
   s_81615de9bf95d3::t_06a0dfb788350a 612-613,623-624
   s_81615de9bf95d3::t_fc24c822be4e3c 778-779
   s_81615de9bf95d3::t_0280e2cc3bb299 633-638
   s_81615de9bf95d3::t_a4a0e86358dcef 368-374,376-381,608-611,614-622,625-632
+  s_81615de9bf95d3::t_f321b7a4874689 639
 test/teslamate/mqtt/pubsub/home_assistant_test.exs
   s_81615de9bf95d3::t_759db3c9fe8dd9 524-529,562-563,622
+  s_81615de9bf95d3::t_0b2d66219c416d 530-561,634-636
 lib/teslamate/mqtt/pubsub/vehicle_subscriber.ex
   s_81615de9bf95d3::t_d03a2c1bc6cc52 126,302-303,305-320
   s_81615de9bf95d3::t_1b81d0210b5039 321-322
