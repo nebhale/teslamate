@@ -43,6 +43,7 @@ test/teslamate/mqtt/pubsub/home_assistant_test.exs
   s_b59971c6b3d64f::t_7e94bbbc354a86 216-228
   s_81615de9bf95d3::t_33c5aa5b6118fc 497-500,512,522-523
   s_81615de9bf95d3::t_7a159e67ee0627 510-514,522-523
+  s_81615de9bf95d3::t_92af79343a719d 515-521
 ---
 {
   "schema_version": "authorship/3.0.0",
