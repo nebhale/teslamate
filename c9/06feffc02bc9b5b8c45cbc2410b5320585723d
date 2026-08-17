@@ -2,6 +2,7 @@ test/teslamate/mqtt/pubsub/home_assistant_test.exs
   s_81615de9bf95d3::t_33c5aa5b6118fc 497-500
   h_1492100876b0a0 496
   s_81615de9bf95d3::t_fe0370b66c3d6d 508-509
+  s_81615de9bf95d3::t_5e975920029c7e 501-507
 lib/teslamate/mqtt/pubsub/home_assistant.ex
   h_1492100876b0a0 507,509-510
 ---
