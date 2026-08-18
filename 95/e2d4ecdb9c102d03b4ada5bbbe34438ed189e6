@@ -1,0 +1,21 @@
+lib/teslamate/vehicles/vehicle.ex
+  s_b8b280031c41d0::t_c26fab153db97f 117
+test/teslamate/vehicles/vehicle_identification_unit_test.exs
+  s_b8b280031c41d0::t_c26fab153db97f 31-37,40-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "95e2d4ecdb9c102d03b4ada5bbbe34438ed189e6",
+  "prompts": {},
+  "sessions": {
+    "s_b8b280031c41d0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a01186-d9ae-7d63-9435-ff33b9dcfaef",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
