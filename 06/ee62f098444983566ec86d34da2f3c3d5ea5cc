@@ -1,0 +1,27 @@
+test/teslamate/vehicles/vehicle_identification_unit_test.exs
+  s_b8b280031c41d0::t_da11632599f836 6-15
+lib/teslamate/vehicles/vehicle.ex
+  s_b8b280031c41d0::t_6fbc0ad9d02e6e 46-47,97-99
+  s_b8b280031c41d0::t_d34fdaf4fdeba4 100
+lib/teslamate_web/live/car_live/summary.html.heex
+  s_b8b280031c41d0::t_6fbc0ad9d02e6e 53
+lib/teslamate/mqtt/pubsub/home_assistant.ex
+  s_b8b280031c41d0::t_576e960d72e3d7 149-152
+  s_b8b280031c41d0::t_6fbc0ad9d02e6e 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "06ee62f098444983566ec86d34da2f3c3d5ea5cc",
+  "prompts": {},
+  "sessions": {
+    "s_b8b280031c41d0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a01186-d9ae-7d63-9435-ff33b9dcfaef",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
