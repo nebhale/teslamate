@@ -1,0 +1,26 @@
+test/teslamate/mqtt/pubsub/home_assistant_test.exs
+  s_b9b9a498cbd0d1::t_9f0c8887a0c4f2 443-445
+  s_b9b9a498cbd0d1::t_e3b6af04c44ad3 294-297,299,426-442,446-447
+  s_b9b9a498cbd0d1::t_ac96c8b4f7f74f 31-33,41,46-48,58-59,64-65,70-76
+  s_b9b9a498cbd0d1::t_08cbcb6a209fbc 77
+test/teslamate/mqtt/pubsub/vehicle_subscriber_test.exs
+  s_b9b9a498cbd0d1::t_ac96c8b4f7f74f 545
+lib/teslamate/mqtt/pubsub/home_assistant.ex
+  s_b9b9a498cbd0d1::t_ac96c8b4f7f74f 46-50,53-55,60-69,72-74,79-82,89
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b43279de8030285d4099dc5a36e15f1ea1f397bd",
+  "prompts": {},
+  "sessions": {
+    "s_b9b9a498cbd0d1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a012f3-6e37-7e33-92b0-bc579a26ae6d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
