@@ -1,0 +1,24 @@
+lib/teslamate_web/live/car_live/summary.html.heex
+  s_b8b280031c41d0::t_c43689cad2a44c 53
+lib/teslamate_web/live/car_live/summary.ex
+  s_b8b280031c41d0::t_c43689cad2a44c 6-7,136-137
+  s_b8b280031c41d0::t_2b7887ab55a926 138
+test/teslamate_web/live/car_summary_live_test.exs
+  s_b8b280031c41d0::t_c43689cad2a44c 47-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ed2de799fda9fd12d736592f2ad35028633cc2b5",
+  "prompts": {},
+  "sessions": {
+    "s_b8b280031c41d0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a01186-d9ae-7d63-9435-ff33b9dcfaef",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
