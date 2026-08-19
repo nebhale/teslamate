@@ -28,6 +28,7 @@ lib/teslamate/mqtt/pubsub/home_assistant.ex
   s_61473c49205c1a::t_80480eec186801 711
   s_61473c49205c1a::t_df2e7ff5fb1532 324
   s_b9b9a498cbd0d1::t_ac96c8b4f7f74f 48-52,62-63,65-72,76-78,83-86,93
+  s_61473c49205c1a::t_9c18f809d9c659 55-58
 test/teslamate/mqtt/pubsub/pubsub_test.exs
   s_44bab730a4fd26::t_923a2b43b20767 16-17,46-47
   s_44bab730a4fd26::t_75696046b107c6 19-20,34,49-50,62
