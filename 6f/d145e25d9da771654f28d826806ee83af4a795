@@ -1,0 +1,98 @@
+test/teslamate/mqtt/pubsub/home_assistant_test.exs
+  s_44bab730a4fd26::t_923a2b43b20767 64,77-78,106-110,112-116,119-122,124,270,282,297-298,301,315-322,329,341-347,584-588,610,647,649-650,652-659,767,769-770
+  s_44bab730a4fd26::t_769b878f15f20d 117-118
+  s_44bab730a4fd26::t_5d77cbe356a257 154,207,218,229,246
+  s_44bab730a4fd26::t_1fce1337ae99b1 17-19,59-63
+  s_44bab730a4fd26::t_fd36dac97c632f 9-10,13,45-46,48-51,57-58,65,71,73-74,311-314,330-333,662,667-676,678-680,685-691,697-705,711-726,732-738,775-783
+  s_44bab730a4fd26::t_f5cd660652b250 42,125-136,305
+  s_61473c49205c1a::t_94e43966860861 172-173
+  s_61473c49205c1a::t_17edfc675cbf6b 162-171,174-199
+  s_b9b9a498cbd0d1::t_9f0c8887a0c4f2 760-762
+  s_b9b9a498cbd0d1::t_e3b6af04c44ad3 323-326,328,739-751,757-759,763-764
+  s_b9b9a498cbd0d1::t_ac96c8b4f7f74f 47,52,56,66-67,75-76,99-105
+  s_b9b9a498cbd0d1::t_08cbcb6a209fbc 106
+  s_b9b9a498cbd0d1::t_77bddd8de2af51 535-563,565-574,576-578
+  s_b9b9a498cbd0d1::t_c599db1e827a45 69-71,611-617,618-626,639,681-683
+  s_b9b9a498cbd0d1::t_4834fd42e1f5c5 53-55
+website/docs/integrations/home_assistant.md
+  s_44bab730a4fd26::t_923a2b43b20767 38-41,69
+  s_44bab730a4fd26::t_a8000358fc69d3 48-53
+lib/teslamate/mqtt/pubsub/home_assistant.ex
+  s_44bab730a4fd26::t_923a2b43b20767 3-5,84,95-96,98-101,158,165,169-170,172-173,175-178,231,250,257-262
+  s_44bab730a4fd26::t_5cb6fcaf5cf4e0 174
+  s_44bab730a4fd26::t_0a36619d6b22e4 191
+  s_44bab730a4fd26::t_a8000358fc69d3 18,171,213-215,223-230,233,240-249,253-255
+  s_44bab730a4fd26::t_fa04630849c5f6 256
+  s_44bab730a4fd26::t_2de7e468fc18e9 95-96,102-111,125-126,138-139,145-148,179-187
+  s_81615de9bf95d3::t_ee63015c90f39f 457
+  s_81615de9bf95d3::t_a4a0e86358dcef 451-456
+  s_61473c49205c1a::t_17edfc675cbf6b 392-397,460-467,469-473,475,478-485,487-491,493,891-897
+  s_61473c49205c1a::t_94e43966860861 474,492
+  s_61473c49205c1a::t_80480eec186801 898
+  s_61473c49205c1a::t_df2e7ff5fb1532 398
+  s_b9b9a498cbd0d1::t_ac96c8b4f7f74f 112-116,127-128,130-137,141,144,149-152,159
+  s_b9b9a498cbd0d1::t_77bddd8de2af51 160-161,163,168,399-424,867
+  s_b9b9a498cbd0d1::t_c599db1e827a45 59-61,83,234,238,722,724,726-727,732,734,736-737,742,744,746-747,752,754,756-757
+test/teslamate/mqtt/pubsub/pubsub_test.exs
+  s_44bab730a4fd26::t_923a2b43b20767 16-17,46-47
+  s_44bab730a4fd26::t_75696046b107c6 19-20,34,49-50,62
+  s_44bab730a4fd26::t_4789bd76cbc687 32-33,60-61,63
+  s_44bab730a4fd26::t_830f6186b3521c 21,51
+test/teslamate/mqtt/pubsub/vehicle_subscriber_test.exs
+  s_44bab730a4fd26::t_923a2b43b20767 480-481,483-484,489-490,660
+  s_44bab730a4fd26::t_e157bd694b70f5 488
+  s_44bab730a4fd26::t_cf0c1cbe9206e3 546
+  s_44bab730a4fd26::t_3c35d3ae6a3fc0 622-640,643-651
+  s_44bab730a4fd26::t_4789bd76cbc687 493-494,663
+  s_44bab730a4fd26::t_f2ae5dd04a1be8 664
+  s_44bab730a4fd26::t_a76743ba48ec2a 497,512-513,524-525,536-537,641-642
+  s_44bab730a4fd26::t_abf032eec30a90 519,531,541,605-614
+  s_b9b9a498cbd0d1::t_ac96c8b4f7f74f 548
+lib/teslamate/mqtt/pubsub/vehicle_subscriber.ex
+  s_44bab730a4fd26::t_c2bd493ccbe4c6 196-203
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6fd145e25d9da771654f28d826806ee83af4a795",
+  "prompts": {},
+  "humans": {
+    "h_1492100876b0a0": {
+      "author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  },
+  "sessions": {
+    "s_44bab730a4fd26": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a00598-e790-7ae0-919b-b9e325e85645",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    },
+    "s_61473c49205c1a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a011ac-0cf0-7f92-86e6-0ffc6cd42b4c",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_81615de9bf95d3": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a00ab8-6524-7711-a340-9d9e3bcf1a58",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    },
+    "s_b9b9a498cbd0d1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a012f3-6e37-7e33-92b0-bc579a26ae6d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
