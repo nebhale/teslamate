@@ -1,0 +1,20 @@
+website/docs/integrations/home_assistant.md
+  s_90a4bab08d79ac::t_4ca129918da2f9 82
+  s_90a4bab08d79ac::t_ea3073909a7bb9 83-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "434c6e0caca2b1630ff0c6cbbfde863711e89b11",
+  "prompts": {},
+  "sessions": {
+    "s_90a4bab08d79ac": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a02452-d16a-78f1-95a9-8217f8322df6",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    }
+  }
+}
