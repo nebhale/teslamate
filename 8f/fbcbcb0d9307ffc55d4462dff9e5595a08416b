@@ -1,0 +1,19 @@
+test/teslamate/mqtt/pubsub/vehicle_subscriber_test.exs
+  s_90a4bab08d79ac::t_701da60a660f66 675
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8ffbcbcb0d9307ffc55d4462dff9e5595a08416b",
+  "prompts": {},
+  "sessions": {
+    "s_90a4bab08d79ac": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a02452-d16a-78f1-95a9-8217f8322df6",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
