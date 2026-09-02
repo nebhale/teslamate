@@ -1,0 +1,26 @@
+test/teslamate/mqtt/pubsub/vehicle_subscriber_test.exs
+  s_af2240be64b9d0::t_87dd570186081b 689
+lib/teslamate/mqtt/pubsub/home_assistant.ex
+  s_af2240be64b9d0::t_87dd570186081b 76,111-113,115-117,121-124,127,129,140,210,214-215,218
+website/docs/integrations/home_assistant.md
+  s_af2240be64b9d0::t_87dd570186081b 48-57
+test/teslamate/mqtt/pubsub/home_assistant_test.exs
+  s_af2240be64b9d0::t_87dd570186081b 33,41,45,51-52,70,74,95,115-131,366,368,372-376,378-379,392-393,395,397,399,407,1035-1036,1060,1071,1074-1075,1087,1089-1090,1092
+  s_af2240be64b9d0::t_17be503cfadd88 132-133,377,398
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "8a7e4d29aecadc20e3341de88cc295ecb4fe246c",
+  "prompts": {},
+  "sessions": {
+    "s_af2240be64b9d0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0637b-ab5a-7fe1-8264-25ff8e8e1efa",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    }
+  }
+}
