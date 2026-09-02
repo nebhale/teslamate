@@ -1,0 +1,98 @@
+lib/teslamate/auth.ex
+  s_af2240be64b9d0::t_ff655fee589613 14-21,24-29,38-39,45,47-48,56-59,63-64,73-76,80-81
+website/docs/configuration/environment_variables.md
+  s_af2240be64b9d0::t_ff655fee589613 46,48-52
+lib/tesla_api.ex
+  s_af2240be64b9d0::t_ff655fee589613 7,16,28-29
+lib/teslamate/application.ex
+  s_af2240be64b9d0::t_ff655fee589613 21-34,42-44,60
+website/docs/configuration/api.md
+  s_af2240be64b9d0::t_ff655fee589613 2,7,9-78
+lib/tesla_api/auth/refresh.ex
+  s_af2240be64b9d0::t_ff655fee589613 6-8,10-20,23-31,33,39,49-57
+  s_af2240be64b9d0::t_a860bcab58a517 58-59
+lib/teslamate/charging_costs/sync_state.ex
+  s_af2240be64b9d0::t_ff655fee589613 1-30
+lib/teslamate/api.ex
+  s_af2240be64b9d0::t_ff655fee589613 15-21,64-72,110-113,128-135,137,139-142,146,152-179,183-187,192-193,221-222,232,235,263,270,303-321,368-370
+lib/teslamate/fleet_api.ex
+  s_af2240be64b9d0::t_ff655fee589613 1-36
+test/tesla_api/charging_history_test.exs
+  s_af2240be64b9d0::t_ff655fee589613 1-120
+test/tesla_api/middleware/fleet_auth_test.exs
+  s_af2240be64b9d0::t_ff655fee589613 1-40
+lib/teslamate/log/car.ex
+  s_af2240be64b9d0::t_ff655fee589613 5,29-30
+test/tesla_api/auth/refresh_test.exs
+  s_af2240be64b9d0::t_ff655fee589613 1-56
+test/support/mocks/auth.ex
+  s_af2240be64b9d0::t_ff655fee589613 14,16-17,19-20,43-47,52-54,56
+  s_af2240be64b9d0::t_2f05b1e2d26fae 55
+lib/teslamate/api/config.ex
+  s_af2240be64b9d0::t_ff655fee589613 1-95
+test/teslamate/charging_costs_test.exs
+  s_af2240be64b9d0::t_ff655fee589613 1-167
+test/teslamate/auth_test.exs
+  s_af2240be64b9d0::t_ff655fee589613 53-88
+lib/teslamate/auth/tokens.ex
+  s_af2240be64b9d0::t_ff655fee589613 10-11,13,23-25
+lib/teslamate_web/templates/layout/root.html.heex
+  s_af2240be64b9d0::t_ff655fee589613 141
+test/test_helper.exs
+  s_af2240be64b9d0::t_ff655fee589613 23
+lib/tesla_api/charging_history.ex
+  s_af2240be64b9d0::t_ff655fee589613 1-221
+lib/teslamate_web/live/signin_live/index.ex
+  s_af2240be64b9d0::t_ff655fee589613 16,28
+lib/teslamate/charging_costs.ex
+  s_af2240be64b9d0::t_ff655fee589613 1-222
+test/tesla_api/charging_history_live_test.exs
+  s_af2240be64b9d0::t_ff655fee589613 1-29
+lib/teslamate/charging_costs/tesla_charging_session.ex
+  s_af2240be64b9d0::t_ff655fee589613 1-47
+lib/tesla_api/charging_history/result.ex
+  s_af2240be64b9d0::t_ff655fee589613 1-5
+test/teslamate/api/config_test.exs
+  s_af2240be64b9d0::t_ff655fee589613 1-63
+lib/teslamate/log/charging_process.ex
+  s_af2240be64b9d0::t_ff655fee589613 7,30
+website/docs/installation/tokens.md
+  s_af2240be64b9d0::t_ff655fee589613 13-18
+lib/teslamate_web/live/settings_live/index.ex
+  s_af2240be64b9d0::t_ff655fee589613 7,21-28,119-157,168-190,242-257
+  s_af2240be64b9d0::t_744d2112869e02 258
+priv/repo/migrations/20260825120000_add_tesla_charging_cost_sync.exs
+  s_af2240be64b9d0::t_ff655fee589613 1-45
+lib/teslamate/charging_cost_sync.ex
+  s_af2240be64b9d0::t_ff655fee589613 1-136
+test/teslamate/charging_cost_sync_test.exs
+  s_af2240be64b9d0::t_ff655fee589613 1-99
+lib/teslamate/http.ex
+  s_af2240be64b9d0::t_ff655fee589613 16-19
+lib/tesla_api/charging_history/session.ex
+  s_af2240be64b9d0::t_ff655fee589613 1-16
+config/runtime.exs
+  s_af2240be64b9d0::t_ff655fee589613 113-115
+lib/tesla_api/middleware/fleet_auth.ex
+  s_af2240be64b9d0::t_ff655fee589613 22,43-49
+lib/tesla_api/auth.ex
+  s_af2240be64b9d0::t_ff655fee589613 16,20-25,29-30,36-37,43
+lib/teslamate_web/live/settings_live/index.html.heex
+  s_af2240be64b9d0::t_ff655fee589613 368-455
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "6be07dd4c8d531831640210ce056a9a0c2d33855",
+  "prompts": {},
+  "sessions": {
+    "s_af2240be64b9d0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0637b-ab5a-7fe1-8264-25ff8e8e1efa",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
