@@ -1,0 +1,147 @@
+website/docs/configuration/api.md
+  s_326eb76e7ee007::t_d801c94fe940a1 7,9-73
+  s_326eb76e7ee007::t_0c26e9bcc043dd 2,74-78
+lib/teslamate/log/charging_process.ex
+  s_326eb76e7ee007::t_d90cec308da7d2 7,30
+lib/teslamate_web/live/settings_live/index.html.heex
+  s_326eb76e7ee007::t_2215080190cdb5 437
+  s_326eb76e7ee007::t_3f2049bf3dd5f4 368-436,438-455
+test/teslamate/charging_costs_test.exs
+  s_326eb76e7ee007::t_266c5950f856db 7-8,13-16
+  s_326eb76e7ee007::t_d78fec68e3fb26 26,34,64,84,97,112,154,157
+  s_326eb76e7ee007::t_696092d2788e3e 119
+  s_326eb76e7ee007::t_0319576dedf5c6 1-6,9,11-12,17-24,41-44,46-61,72-82,91-95,104-109,120-132,140-141,145-153,155-156,158-167
+  s_326eb76e7ee007::t_937dea05a5a554 45
+  s_326eb76e7ee007::t_5a26ed8871c03a 10,25,27-33,35-40,62-63,65-71,83,85-90,96,98-103,110-111,113-118,143-144
+  s_326eb76e7ee007::t_f23f2e57a75130 133-139,142
+lib/teslamate/charging_costs/sync_state.ex
+  s_326eb76e7ee007::t_d90cec308da7d2 1-30
+lib/teslamate/api.ex
+  s_326eb76e7ee007::t_c6d1297f377622 15-20,64-72,110-113,128-133,135,137,139-142,146,152-153,178,186-187,192-193,221-222,232,235,263,270,303-321,368-370
+  s_326eb76e7ee007::t_59fc25b2aa35cb 21,134
+  s_326eb76e7ee007::t_5145a2c9631961 154-177
+  s_326eb76e7ee007::t_9a310f535b1651 179
+  s_326eb76e7ee007::t_80eb5cd6cb5faf 183-185
+website/docs/installation/tokens.md
+  s_326eb76e7ee007::t_d801c94fe940a1 13-18
+lib/tesla_api/middleware/fleet_auth.ex
+  s_326eb76e7ee007::t_0c26e9bcc043dd 22,46-49
+  s_326eb76e7ee007::t_e6e4b289a0ec82 43-45
+lib/teslamate/charging_costs/tesla_charging_session.ex
+  s_326eb76e7ee007::t_0c26e9bcc043dd 18,38
+  s_326eb76e7ee007::t_d90cec308da7d2 1-17,19-37,39-47
+lib/tesla_api/charging_history.ex
+  s_326eb76e7ee007::t_0c26e9bcc043dd 34-38,108-110,141
+  s_326eb76e7ee007::t_9ec2763b4ba39b 1-33,39-42,45-107,111-140,142-189,191-193,199-202,204-217,221
+  s_326eb76e7ee007::t_5a26ed8871c03a 190,195-198,203,218-220
+  s_326eb76e7ee007::t_696092d2788e3e 194
+  s_326eb76e7ee007::t_75825f16de4fae 43-44
+lib/tesla_api/auth.ex
+  s_326eb76e7ee007::t_e6e4b289a0ec82 16,20-25,36-37,43
+  s_326eb76e7ee007::t_b6ccc61b60497d 29-30
+lib/tesla_api/charging_history/session.ex
+  s_326eb76e7ee007::t_9ec2763b4ba39b 1-16
+config/runtime.exs
+  s_326eb76e7ee007::t_fedf339fbd4de1 113-115
+website/docs/configuration/environment_variables.md
+  s_326eb76e7ee007::t_d801c94fe940a1 46,48-52
+lib/teslamate_web/live/signin_live/index.ex
+  s_326eb76e7ee007::t_2215080190cdb5 16,28
+test/tesla_api/middleware/fleet_auth_test.exs
+  s_326eb76e7ee007::t_2215080190cdb5 1-40
+lib/teslamate/application.ex
+  s_326eb76e7ee007::t_fedf339fbd4de1 21-34,42-44,60
+lib/tesla_api/auth/refresh.ex
+  s_326eb76e7ee007::t_0c26e9bcc043dd 39
+  s_326eb76e7ee007::t_e6e4b289a0ec82 6-8,10-11,14-20,23-31,33,49-57
+  s_326eb76e7ee007::t_59fc25b2aa35cb 12-13
+  s_326eb76e7ee007::t_49f5513a168b26 58-59
+test/teslamate/auth_test.exs
+  s_326eb76e7ee007::t_0319576dedf5c6 53-88
+test/teslamate/charging_cost_sync_test.exs
+  s_326eb76e7ee007::t_b114842d7b5334 1-50,52-90,92-99
+  s_326eb76e7ee007::t_a54ac315e26eb1 51,91
+test/test_helper.exs
+  s_326eb76e7ee007::t_119a5562324c95 23
+test/tesla_api/charging_history_live_test.exs
+  s_326eb76e7ee007::t_119a5562324c95 1-12,17-29
+  s_326eb76e7ee007::t_de837fa423b452 13-16
+lib/tesla_api.ex
+  s_326eb76e7ee007::t_75825f16de4fae 7,16,28-29
+lib/teslamate/mqtt/pubsub/home_assistant.ex
+  s_af2240be64b9d0::t_887eb94f5e32b0 76,111-113,115-117,121-124,127,129,140,210,214-215,218
+test/tesla_api/charging_history_test.exs
+  s_326eb76e7ee007::t_266c5950f856db 22,78
+  s_326eb76e7ee007::t_afe40b417b65ba 43,87
+  s_326eb76e7ee007::t_0319576dedf5c6 1-21,23-42,44-77,79-86,88-120
+lib/teslamate/charging_costs.ex
+  s_326eb76e7ee007::t_d90cec308da7d2 1-41,44-49,57,59-60,62,68-70,76-85,87-91,102-119,121-222
+  s_326eb76e7ee007::t_0c26e9bcc043dd 71-75,86,92-101,120
+  s_326eb76e7ee007::t_bd85b024dce254 42-43,50-56,58,61,63-67
+test/support/mocks/auth.ex
+  s_326eb76e7ee007::t_c6d1297f377622 14,16-17,19-20,43-47,52-54,56
+  s_326eb76e7ee007::t_bf0cd1e894daa7 55
+test/tesla_api/auth/refresh_test.exs
+  s_326eb76e7ee007::t_d0cae9f7ef4b20 1-56
+lib/teslamate/fleet_api.ex
+  s_326eb76e7ee007::t_c6d1297f377622 1-36
+lib/teslamate/auth.ex
+  s_326eb76e7ee007::t_b5bd378fb805ab 14-21,24-29,38-39,45,47-48,56-59,63-64,73-76,80-81
+test/teslamate/mqtt/pubsub/home_assistant_test.exs
+  s_af2240be64b9d0::t_17be503cfadd88 33,41,45,51-52,70,74,95,115-124,127,130-133,366,368,372-379,392-393,395,397-399,407
+  s_af2240be64b9d0::t_7e47f5bef6ce81 125-126,128-129
+  s_af2240be64b9d0::t_c839370602847b 1035-1036,1060,1071,1074-1075,1087,1089-1090,1092
+test/teslamate/api/config_test.exs
+  s_326eb76e7ee007::t_41c8d212ed04c8 1-63
+lib/teslamate_web/templates/layout/root.html.heex
+  s_326eb76e7ee007::t_2215080190cdb5 141
+lib/teslamate/log/car.ex
+  s_326eb76e7ee007::t_d90cec308da7d2 5,29-30
+lib/tesla_api/charging_history/result.ex
+  s_326eb76e7ee007::t_9ec2763b4ba39b 1-5
+test/teslamate/mqtt/pubsub/vehicle_subscriber_test.exs
+  s_af2240be64b9d0::t_7e47f5bef6ce81 689
+website/docs/integrations/home_assistant.md
+  s_af2240be64b9d0::t_46f871520fe745 48-57
+lib/teslamate/charging_cost_sync.ex
+  s_326eb76e7ee007::t_fedf339fbd4de1 1-136
+priv/repo/migrations/20260825120000_add_tesla_charging_cost_sync.exs
+  s_326eb76e7ee007::t_b5bd378fb805ab 1-20,22-45
+  s_326eb76e7ee007::t_0c26e9bcc043dd 21
+lib/teslamate/api/config.ex
+  s_326eb76e7ee007::t_e6e4b289a0ec82 1-30,33-58,60,62-68,72-95
+  s_326eb76e7ee007::t_0c26e9bcc043dd 69,71
+  s_326eb76e7ee007::t_59fc25b2aa35cb 31-32,59,61,70
+lib/teslamate/auth/tokens.ex
+  s_326eb76e7ee007::t_b5bd378fb805ab 10-11,13,23-25
+lib/teslamate/http.ex
+  s_326eb76e7ee007::t_fedf339fbd4de1 16-19
+lib/teslamate_web/live/settings_live/index.ex
+  s_326eb76e7ee007::t_3f2049bf3dd5f4 7,21-28,119-157,168-190,242-250
+  s_326eb76e7ee007::t_2215080190cdb5 251,253-258
+  s_326eb76e7ee007::t_d3284b2c2e1abd 252
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "e0d28d7956118450f0796433796ab19c97ff0db3",
+  "prompts": {},
+  "sessions": {
+    "s_326eb76e7ee007": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a03b60-5ef4-7a20-9300-5f526408d1c3",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    },
+    "s_af2240be64b9d0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0637b-ab5a-7fe1-8264-25ff8e8e1efa",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
