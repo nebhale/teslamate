@@ -1,0 +1,20 @@
+lib/teslamate/mqtt/pubsub/home_assistant.ex
+  s_1f3df4c72b99c8::t_49c1838e8047a6 127,139,202,214-218
+  s_1f3df4c72b99c8::t_3303f690dcaec5 219-220
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "9c594d3e45065379208f535ecbef191e23fd735c",
+  "prompts": {},
+  "sessions": {
+    "s_1f3df4c72b99c8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a07165-2c69-7363-9ddb-ac8c185e1dc5",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
