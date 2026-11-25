@@ -1,0 +1,37 @@
+elixir/lib/teslamate/mqtt/pubsub/home_assistant.ex
+  s_1095ad3953eaf6::t_07872668da1d81 909-915
+elixir/test/fixtures/characterization/goldens/discovery_car_type_nil.json
+  s_1095ad3953eaf6::t_6631ef052ce4ac 993,997-999
+elixir/test/fixtures/characterization/goldens/discovery_cybertruck.json
+  s_1095ad3953eaf6::t_4f34ba6bc24f51 993,997-999
+elixir/test/fixtures/characterization/goldens/discovery_details.json
+  s_1095ad3953eaf6::t_b7c6b431b1bd9a 993,997-999
+elixir/test/fixtures/characterization/goldens/discovery_model3_74.json
+  s_1095ad3953eaf6::t_9be4646beef6cb 993,997-999
+elixir/test/fixtures/characterization/goldens/discovery_no_display_name.json
+  s_1095ad3953eaf6::t_677475b35b3044 993,997-999
+elixir/test/fixtures/characterization/goldens/discovery_trim_nil.json
+  s_1095ad3953eaf6::t_476cda9022f369 993,997-999
+elixir/test/fixtures/characterization/selftest/goldens/discovery.json
+  s_1095ad3953eaf6::t_a46de766b85a95 993,997-999
+elixir/test/teslamate/mqtt/pubsub/home_assistant_test.exs
+  s_1095ad3953eaf6::t_591023ce21b3de 974-975,980-981,1011,1036-1037
+website/docs/integrations/home_assistant.md
+  s_1095ad3953eaf6::t_83fee731898bf6 50-51,62-67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "06448f8d50fe16ee4a639420d71a516d28137659",
+  "prompts": {},
+  "sessions": {
+    "s_1095ad3953eaf6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a212b9-16b6-71f2-b16a-46eb4a921191",
+        "model": "gpt-6.2-astra"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
