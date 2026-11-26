@@ -1,0 +1,24 @@
+website/docs/integrations/home_assistant.md
+  s_1095ad3953eaf6::t_e1714d74e0f48f 18,40-42,45-46,119-121,428
+  s_1095ad3953eaf6::t_cb7d15647c4b56 8,20,34-39,43-44,63-68,70-74,96,107,109-113,117-118,134,136,138,142,144,146,150,152,157,161,170,175,177,179,181,183,185,187,189,191,193,195,197,199,201,203,205,207,209,211,213,215,217,219,221,223,225,227,229,231,233-235,237,239,241,243,245,247,249,251,253,255,257,259,261,263,265,267,269,271,273,275,277,279,287-288,295,305-306,419-421,423-426,429-443
+elixir/test/teslamate/mqtt/pubsub/home_assistant_test.exs
+  s_1095ad3953eaf6::t_0cc12ee832123a 100-101,559
+website/docs/configuration/environment_variables.md
+  s_1095ad3953eaf6::t_94f09ffe6628c3 38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "798accb7e677e06665abeeaf235c33fa23794bb1",
+  "prompts": {},
+  "sessions": {
+    "s_1095ad3953eaf6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a212b9-16b6-71f2-b16a-46eb4a921191",
+        "model": "gpt-6.2-astra"
+      },
+      "human_author": "Ben Hale <nebhale@nebhale.com>"
+    }
+  }
+}
